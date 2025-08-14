@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Selector</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('./pexels-photo-405169.jpeg'); /* Try relative path */
+            background-color: #f5f5f5; /* Fallback color */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* 90% opaque white */
+            border: 1px solid #ccc;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 250px;
+        }
+
+        .language-button {
+            padding: 15px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #1e3a8a;
+            background-color: #dbeafe; /* Buttons remain fully opaque */
+            border: 2px solid #93c5fd;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.2s ease;
+            display: block;
+        }
+
+        .language-button:hover {
+            background-color: #bfdbfe;
+            border-color: #60a5fa;
+        }
+
+        .language-button:active {
+            transform: translateY(1px);
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+                margin: 20px;
+            }
+            
+            .button-grid {
+                width: 200px;
+                gap: 12px;
+            }
+            
+            .language-button {
+                padding: 12px 16px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="button-grid">
+            <a href="http://www.dummie.com/FR" class="language-button">Nederlands</a>
+            <a href="http://www.dummie.com/NL" class="language-button">Français</a>
+            <a href="http://www.dummie.com/EN" class="language-button">English</a>
+        </div>
+    </div>
+</body>
+</html>
